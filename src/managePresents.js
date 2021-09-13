@@ -1,3 +1,8 @@
 export function managePresents(state, action) {
-  // your code here
+
+  if (action.type === "presents/increase") {
+      return { numberOfPresents: state.numberOfPresents + 1 }
+  } else {
+    return state
+  }
 }
